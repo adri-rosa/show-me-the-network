@@ -1,4 +1,6 @@
+
 /*Elementos HTML*/
+
 
 p{
     text-align: center;
@@ -8,6 +10,7 @@ p{
     font-size: 25px;
     color: #041A6B;
 }
+
 header{
     text-align:center;
 }
@@ -103,3 +106,14 @@ h1{
     color: #ffffff;
     text-align: center;
     }
+
+h1{
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    letter-spacing: -2px;
+    color: #041A6B;
+}
+
