@@ -10,11 +10,15 @@ body{
 h1{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;    
-    text-align: left;          
+    font-weight: 800;                  
+    font-size-adjust: initial;
     
-    line-height: 210%;    
+    line-height: 112%;    
     color: #041A6B;    
+}
+
+input{
+    display: block;
 }
 
 /*classes*/
@@ -26,6 +30,13 @@ h1{
     font-style: normal;
     font-weight: 800;
     width: 100%;    
+    margin: 0em;
+    padding: 0;
+}
+
+.container-fluid{
+    margin: 0em;
+    padding: 0;
 }
 
 #topo{
@@ -139,3 +150,35 @@ h1{
         
         line-height: 178%;
     }
+
+
+
+    /*MAIL CHIMP*/
+    #mce-EMAIL{
+
+        box-shadow: 0 0 0 0;
+        border-bottom: 2px solid #041A6B;
+        outline: 0;
+        opacity: 0;
+        
+    }
+
+    #mce-FNAME{
+
+        box-shadow: 0 0 0 0;
+        border-bottom: 2px solid #041A6B;        
+        outline: 0;
+        opacity: 0;
+
+    }
+
+    .button{
+        background-color: #041A6B;
+        border-style: none;
+        border-radius: 55px;
+        width: 178px;
+        height: 58px;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        font-size: 16px;
+      }
