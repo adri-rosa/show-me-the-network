@@ -239,4 +239,26 @@ body{
         font-family: 'Poppins';
         font-size: 20px;
     }
-
+		
+	#dialogoverlay{
+	display: none;
+	opacity: .5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 50%;
+	z-index: 1;
+	}
+	
+	#dialogbox{
+		display: none;
+		position: fixed;
+		background: #00008B;
+		border-radius: 1px; 
+		z-index: 1;
+	}
+	#dialogbox > div{ background:#00008B; margin:2px; }
+	#dialogbox > div > #dialogboxhead{ background: #191970; padding:2px; color:#CCC; }
+	#dialogbox > div > #dialogboxbody{ background:#0000FF; padding:2px; color:#FFF;text-align:center; }
+	#dialogbox > div > #dialogboxfoot{ background: #191970; padding:3px; text-align:center; }
