@@ -2,39 +2,51 @@
 /*Elementos HTML*/
 
 body{
-   
     margin: 0;
     padding: 0;
 }
+#home{
+    padding: 10px;
+}
 
-h1{
+#content h1{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 800;    
     text-align: left;          
-    
-    line-height: 210%;    
+    letter-spacing: -2px;
+    font-size: 60px;
+    line-height: 100%;    
     color: #041A6B;    
+}
+#content h2{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;    
+    text-align: left;          
+    font-size: 25px;
+    line-height: 140%;    
+    color: #041A6B;   
+}
+#content p{
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;    
+    text-align: left;          
+    font-size: 18px;
+    line-height: 194%;    
+    color: #041A6B;   
 }
 
 /*classes*/
 
 /*containers e DIVs*/
-.container{
-
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    width: 100%;    
-}
-
 #topo{
     background: linear-gradient(180deg, rgba(0, 87, 218, 0.75) -1.27%, rgba(163, 255, 238, 0.75) 102.44%);   
     width: 100%;
     height: 100%;
 }
-
-
 
 /*Menu*/
 
@@ -78,7 +90,8 @@ h1{
 
 .contagem{
     width:300px;
-    height:70px;    
+    height:70px;
+    margin: 15px;    
     }
     
     .numero
