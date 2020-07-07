@@ -5,35 +5,17 @@ body{
     margin: 0;
     padding: 0;
 }
-p{
-    font-size:3vh;
-}
-#home{
-    padding: 10px;
-}
-
-#content h1{
-    display: inline-block;
+.content h1{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: bold;   
+    font-weight: 800;   
     text-align: left;          
     letter-spacing: -2px;
-    font-size: 10vh;
+    font-size: 60px;
     line-height: 100%;    
     color: #041A6B;    
 }
-#content h2{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;    
-    text-align: left;          
-    font-size: 25px;
-    line-height: 140%;    
-    color: #041A6B;   
-}
-#content p{
-    padding-top: 10px;
+.content h2{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;    
@@ -42,20 +24,42 @@ p{
     line-height: 194%;    
     color: #041A6B;   
 }
-
-/*classes*/
-
-.logo_topo{
-    margin: 3%;
-    
-    background-image: url("/images/LOGO.webp") no repeat;
+.content h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;    
+    text-align: left;          
+    font-size: 25px;
+    line-height: 140%;    
+    color: #041A6B;   
+}
+.content h4{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;    
+    text-align: left;          
+    font-size: 18px;
+    line-height: 140%;    
+    color: #041A6B;   
+}
+.content p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;    
+    text-align: left;          
+    font-size: 16px;
+    line-height: 219%;    
+    color: #041A6B;   
 }
 
 /*containers e DIVs*/
-#topo{
+.principalBackground{
     background: linear-gradient(180deg, rgba(0, 87, 218, 0.75) -1.27%, rgba(163, 255, 238, 0.75) 102.44%);   
-    width: 100%;
-    height: 100%;
+}
+.principal{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
 }
 
 /*Menu*/
@@ -67,7 +71,6 @@ p{
         padding:0px;
         margin:3%;        
         list-style:none; 
-       ;
         color: #FFFFFF;
 }
 
@@ -84,23 +87,7 @@ p{
 
 .menu ul li a:hover {color:  #041A6B;}
 
-.circulo_compartilhar {	
-    display: inline-block;
-    width: 4.0em;
-    height: 4.0em;        
-    background: #041A6B;
-    border-radius: 50%;
-    margin-top: 1%;
-	overflow: hidden;		
-	transition: 0.3s ease;
-}
-
-.circulo_compartilhar:hover{
-	transform: rotateY(180deg);
-}
-
 /*Contagem Regressiva*/
-
 .contagem{
     width:15vh;
     height:7vh;
@@ -130,65 +117,21 @@ p{
     text-align: center;
     }
 
-/*Empresa*/
+/*Form MailChimp*/
 
-.boxEmpresa{
-    background-color: #FFFFFF;
-}
-    #empresa{
-        background-color: #041a6b;
-        border-radius: 16px;
-        padding-left: 20px;
-        padding-top: 20px;
-        margin: 10px;
-        width: 370px;
-        height: 400px;
-        font-family: 'Poppins';
-        font-style: normal;
-    }
-    h2{
-        font-weight: bold;
-        color: #041a6b;        
-        line-height: 96%;        
-    }
-    #empresa h3{
-        font-weight: bold;
-        color: #FFFFFF;
-        
-        line-height: 120%;
-    }
-    #empresa p{
-        font-weight: 300;
-        color: #FFFFFF;
-        
-        line-height: 178%;
+    #form{
+        padding-bottom: 25px;
+        padding-top: 25px;
     }
 
-
-    #footer{
-        height: 8vh;
-        padding: 3%;
-        background-color: #041A6B;
-        justify-content: center;
-        align-items: center;
+    #form-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
-
-    #footer .menu{
-        margin: 0vh;
-    }
-
-    #footer p{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: normal;    
-        text-align: right;   
-        letter-spacing: -0.015em;       
-        font-size: 2vh;            
-        color: #FFFFFF;   
-    }
-
 
     .button{
+        margin-top: 25px;
         background-color: #041A6B;
         border-style: none;
         border-radius: 55px;
@@ -197,22 +140,90 @@ p{
         color: #FFFFFF;
         font-family: 'Poppins';
         font-size: 2vh;;
-      }
+    }
 
-      input[type=text] {
+    input[type=text], input[type=email] {
         background: transparent;
-            border-top:none;
-            border-left:none;
-            border-right:none;
-            border-bottom: 2px solid #041A6B;
-            font-family: 'Poppins';
-        } 
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom: 2px solid #041A6B;
+        font-family: 'Poppins';
+    } 
 
-        input[type=email] {
-            background: transparent;
-            border-top:none;
-            border-left:none;
-            border-right: none;
-            border-bottom: 2px solid #041A6B;
-            font-family: 'Poppins';
-            } 
+    ::-webkit-input-placeholder{
+        color: #041A6B;
+    }
+
+
+/*Empresa*/
+    #empresa-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #FFFFFF;
+    }
+    #empresa {
+        background-color: #041a6b;
+        border-radius: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        margin: 10px;
+        margin-bottom: 60px;
+        width: 370px;
+        height: 400px;
+        font-family: 'Poppins';
+        font-style: normal;
+    }
+
+    .empresa h1{
+        font-weight: bold;
+        color: #041a6b;        
+        line-height: 96%;   
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 60px;
+        margin-bottom: 30px;     
+    }
+
+    #empresa h2{
+        padding-top: 80px;
+        font-weight: bold;
+        color: #FFFFFF;      
+        line-height: 120%;
+    }
+    #empresa p{
+        font-weight: 300;
+        color: #FFFFFF;       
+        line-height: 178%;
+    }
+
+/*Rodape*/
+
+    #rodape-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #041a6b;
+        height: 250px;
+    }
+
+    .rodape p{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal;    
+        text-align: center; 
+        align-items: center;
+        letter-spacing: -0.015em;                 
+        color: #FFFFFF;   
+    }
+
