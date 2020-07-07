@@ -5,17 +5,21 @@ body{
     margin: 0;
     padding: 0;
 }
+p{
+    font-size:3vh;
+}
 #home{
     padding: 10px;
 }
 
 #content h1{
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;    
+    font-weight: bold;   
     text-align: left;          
     letter-spacing: -2px;
-    font-size: 60px;
+    font-size: 10vh;
     line-height: 100%;    
     color: #041A6B;    
 }
@@ -41,6 +45,12 @@ body{
 
 /*classes*/
 
+.logo_topo{
+    margin: 3%;
+    
+    background-image: url("/images/LOGO.webp") no repeat;
+}
+
 /*containers e DIVs*/
 #topo{
     background: linear-gradient(180deg, rgba(0, 87, 218, 0.75) -1.27%, rgba(163, 255, 238, 0.75) 102.44%);   
@@ -49,12 +59,15 @@ body{
 }
 
 /*Menu*/
+.menu{
+    text-align: right;
+}
 
 .menu ul{  
         padding:0px;
-        margin:1%;        
+        margin:3%;        
         list-style:none; 
-        text-align: right;
+       ;
         color: #FFFFFF;
 }
 
@@ -89,31 +102,31 @@ body{
 /*Contagem Regressiva*/
 
 .contagem{
-    width:300px;
-    height:70px;
-    margin: 15px;    
+    width:15vh;
+    height:7vh;
+       
     }
     
     .numero
     {
-
-    border: 2px solid #FFFFFF;
+    display: inline-block;
+    border: 2px solid #041A6B;
     box-sizing: border-box;
     border-radius: 10px;    
-    width: 100%;
-    height: 100%;
-    font-size: 70%;
-    margin: 5px;
+    width: 10vh;
+    height: 11vh;
+    font-size: 6vh;
+    margin: 1vh;
     text-align: center; 
-    padding: 10px;
-    color: #ffffff;
+    padding: 1vh;
+    color: #FFFFFF;
     }
     
     .legenda{
-    height: 25px;
-    line-height: 10px;
-    font-size:12px;
-    color: #ffffff;
+    display: inline-block;
+    height: 1vh;    
+    font-size:5vh;
+    color: #041A6B;
     text-align: center;
     }
 
@@ -135,10 +148,8 @@ body{
     }
     h2{
         font-weight: bold;
-        color: #041a6b;
-        
-        line-height: 96%;
-        letter-spacing: -0.015em;
+        color: #041a6b;        
+        line-height: 96%;        
     }
     #empresa h3{
         font-weight: bold;
@@ -152,3 +163,56 @@ body{
         
         line-height: 178%;
     }
+
+
+    #footer{
+        height: 8vh;
+        padding: 3%;
+        background-color: #041A6B;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .menu{
+        margin: 0vh;
+    }
+
+    #footer p{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal;    
+        text-align: right;   
+        letter-spacing: -0.015em;       
+        font-size: 2vh;            
+        color: #FFFFFF;   
+    }
+
+
+    .button{
+        background-color: #041A6B;
+        border-style: none;
+        border-radius: 55px;
+        width: 24vh;
+        height: 5vh;
+        color: #FFFFFF;
+        font-family: 'Poppins';
+        font-size: 2vh;;
+      }
+
+      input[type=text] {
+        background: transparent;
+            border-top:none;
+            border-left:none;
+            border-right:none;
+            border-bottom: 2px solid #041A6B;
+            font-family: 'Poppins';
+        } 
+
+        input[type=email] {
+            background: transparent;
+            border-top:none;
+            border-left:none;
+            border-right: none;
+            border-bottom: 2px solid #041A6B;
+            font-family: 'Poppins';
+            } 
