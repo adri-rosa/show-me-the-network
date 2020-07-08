@@ -16,10 +16,10 @@
         minutos = parseInt(segundos_f / 60);
         segundos = parseInt(segundos_f % 60);
     
-    document.getElementById('dia').innerHTML =  dias > 0 ? dias : 0  ;
-    document.getElementById('hora').innerHTML = horas > 0 ? horas : 0  ;
-    document.getElementById('minuto').innerHTML = minutos > 0 ? minutos : 0  ;
-    document.getElementById('segundo').innerHTML = segundos > 0 ? segundos : 0  ;
+//    document.getElementById('dia').innerHTML =  dias > 0 ? dias : 0  ;
+ //   document.getElementById('hora').innerHTML = horas > 0 ? horas : 0  ;
+ //   document.getElementById('minuto').innerHTML = minutos > 0 ? minutos : 0  ;
+//    document.getElementById('segundo').innerHTML = segundos > 0 ? segundos : 0  ;
       
     
     }, 1000);

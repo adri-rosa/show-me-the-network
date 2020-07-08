@@ -3,28 +3,39 @@
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="title" content="PéDeMeia" />
       <meta name="description" content="Muito conteúdo para você começar seu PéDeMeia! Te ajudamos a dar o primeiro passo rumo à sua organização financeira!"/> 
       <meta property="og:image"content="https://www.pedemeia.ml/images/LOGO.webp"/> 
       
       <link rel = "shortcurt icon" href="images/favicon.webp">
-      <!-- Facebook Pixel Code -->
+      
+	  <!-- Facebook Pixel Code -->
          <script>
             !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '720874605432743');
-            fbq('track', 'PageView');
+            {
+				if(f.fbq)
+					return;
+					n=f.fbq=function()
+					    {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+						
+				if (!f._fbq)
+					f._fbq=n;
+					n.push=n;
+					n.loaded=!0;
+					n.version='2.0';
+					
+					n.queue=[];
+					t=b.createElement(e);
+					t.async=!0;
+					t.src=v;
+					s=b.getElementsByTagName(e)[0];
+					s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+					fbq('init', '720874605432743');
+					fbq('track', 'PageView');
             </script>
             <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=720874605432743&ev=PageView&noscript=1"
-            /></noscript>
+            src="https://www.facebook.com/tr?id=720874605432743&ev=PageView&noscript=1"/></noscript>
       <!-- End Facebook Pixel Code -->
       
       <!--Fonts-->
@@ -33,7 +44,7 @@
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
       <link rel="stylesheet" href="src/styles.css"/>
-	  
+	   
 	  <!--Popup de exit-->
 	  <script>
 		function CustomAlert(){
@@ -56,6 +67,7 @@
 				document.getElementById('dialogoverlay').style.display = "none";
 			}
 		}
+		
 	var Alert = new CustomAlert();
 	</script>
 	<div id="dialogoverlay"></div>
@@ -78,12 +90,12 @@
 		}
 
 		addEvent(window,"load",function(e) {
-		addEvent(document, "mouseout", function(e) {
+		addEvent(document, "mouseleave", function(e) {
 			e = e ? e : window.event;
 			var from = e.relatedTarget || e.toElement;
 			if (!from || from.nodeName == "HTML") {
 				// Aqui você coloca o seu popup
-				Alert.render('Fica... Não vai não...');
+				Alert.render('É sério que você já vai?"<br> Vai perder todo esse conteúdo GRATUITO mesmo?');
 			}
 		});
 	});
