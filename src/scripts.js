@@ -1,4 +1,4 @@
-    var target_date = new Date("07/08/2020 20:00").getTime();
+    var target_date = new Date("07/09/2020 19:30").getTime();
     var dias, horas, minutos, segundos;
     var regressiva = document.getElementById("regressiva");
     
@@ -16,10 +16,10 @@
         minutos = parseInt(segundos_f / 60);
         segundos = parseInt(segundos_f % 60);
     
-//    document.getElementById('dia').innerHTML =  dias > 0 ? dias : 0  ;
- //   document.getElementById('hora').innerHTML = horas > 0 ? horas : 0  ;
- //   document.getElementById('minuto').innerHTML = minutos > 0 ? minutos : 0  ;
-//    document.getElementById('segundo').innerHTML = segundos > 0 ? segundos : 0  ;
+   document.getElementById('dia').innerHTML =  dias > 0 ? dias : 0  ;
+   document.getElementById('hora').innerHTML = horas > 0 ? horas : 0  ;
+   document.getElementById('minuto').innerHTML = minutos > 0 ? minutos : 0  ;
+   document.getElementById('segundo').innerHTML = segundos > 0 ? segundos : 0  ;
       
     
     }, 1000);

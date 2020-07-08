@@ -4,12 +4,18 @@
 body{
     background-color: #FFFFFF;   
     margin: 0;
-    padding: 0;
+    padding:0;
+}
+
+.logo{    
+    padding-top: 5vh;
+}
+td{
+    align-content: center;
 }
 .content h1{
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 800;   
+    font-weight: 800;    
     text-align: left;          
     letter-spacing: -2px;
     font-size: 60px;
@@ -68,7 +74,11 @@ body{
     text-align: right;
 }
 
+.topMenu{
+    padding-top: -5vh;
+}
 .menu ul{  
+        
         padding:0px;
         margin:3%;        
         list-style:none; 
@@ -91,7 +101,9 @@ body{
 /*Contagem Regressiva*/
 .contagem{
     width:15vh;
-    height:7vh;
+    height:12vh;
+    display:flex;
+    align-content: center;
        
     }
     
@@ -104,7 +116,7 @@ body{
     width: 10vh;
     height: 11vh;
     font-size: 6vh;
-    margin: 1vh;
+    margin: 2vh;
     text-align: center; 
     padding: 1vh;
     color: #FFFFFF;
@@ -114,15 +126,19 @@ body{
     display: inline-block;
     height: 1vh;    
     font-size:5vh;
+    margin: 1vh;
+    padding: 3vh;
     color: #041A6B;
-    text-align: center;
+    align-content: center;
     }
 
 /*Form MailChimp*/
 
     #form{
+        display: inline-block;
         padding-bottom: 25px;
-        padding-top: 25px;
+        padding-top: 8vh;
+        margin-top: 3vh;
     }
 
     #form-container{
