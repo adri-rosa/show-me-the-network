@@ -73,9 +73,6 @@ td{
     text-align: right;
 }
 
-.topMenu{
-    padding-top: -5vh;
-}
 .menu ul{  
         
         padding:0px;
@@ -258,6 +255,14 @@ td{
         letter-spacing: -0.015em;                 
         color: #FFFFFF;   
     }
+    .rodape a{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal; 
+        color:#FFFFFF;
+        text-decoration: none;
+    }
+    .rodape a:hover {color:  #A3FFEE;}
 
 /*Inscricao*/
     .button-insc{
