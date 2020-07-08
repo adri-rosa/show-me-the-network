@@ -42,64 +42,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
       <!--end fonts-->
       <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
       <link rel="stylesheet" href="src/styles.css"/>
-	   
-	  <!--Popup de exit-->
-	  <script>
-		function CustomAlert(){
-			this.render = function(dialog){
-				var winW = window.innerWidth;
-				var winH = window.innerHeight;
-				var dialogoverlay = document.getElementById('dialogoverlay');
-				var dialogbox = document.getElementById('dialogbox');
-				dialogoverlay.style.display = "block";
-				dialogoverlay.style.height = winH+"px";
-				dialogbox.style.left = (winW/2) - (550 * .5)+"px";
-				dialogbox.style.top = "100px";
-				dialogbox.style.display = "block";
-				document.getElementById('dialogboxhead').innerHTML = "<img src='images/gatodeBotas.gif' width='400' height='300'>";		
-				document.getElementById('dialogboxbody').innerHTML = dialog;
-				document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
-			}
-			this.ok = function(){
-				document.getElementById('dialogbox').style.display = "none";
-				document.getElementById('dialogoverlay').style.display = "none";
-			}
-		}
-		
-	var Alert = new CustomAlert();
-	</script>
-	<div id="dialogoverlay"></div>
-	<div id="dialogbox">
-	  <div>
-		<div id="dialogboxhead"></div>
-		<div id="dialogboxbody"></div>
-		<div id="dialogboxfoot"></div>
-	  </div>
-	</div>
 
-	<script>
-		function addEvent(obj, evt, fn) {
-		if (obj.addEventListener) {
-			obj.addEventListener(evt, fn, false);
-		}
-		else if (obj.attachEvent) {
-			obj.attachEvent("on" + evt, fn);
-			}
-		}
-
-		addEvent(window,"load",function(e) {
-		addEvent(document, "mouseleave", function(e) {
-			e = e ? e : window.event;
-			var from = e.relatedTarget || e.toElement;
-			if (!from || from.nodeName == "HTML") {
-				// Aqui você coloca o seu popup
-				Alert.render('É sério que você já vai?"<br> Vai perder todo esse conteúdo GRATUITO mesmo?');
-			}
-		});
-	});
-	</script>	  
     <title>PéDeMeia</title>
   </head>
 
@@ -337,6 +281,17 @@
                <p> ©️PéDeMeia, Inc. 2020. ❤️ </p>
             </div>
          </div>
+         
+      <!--Popup de exit-->
+         <div id="dialogoverlay"></div>
+         <div id="dialogbox">
+            <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+            </div>
+         </div>
+      <!--End Popup de exit-->
 
       <script src="src/scripts.js"></script>
    </body>
