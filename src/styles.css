@@ -5,10 +5,6 @@ body{
     margin: 0;
     padding:0;
 }
-
-.logo{    
-    padding-top: 5vh;
-}
 td{
     align-content: center;
 }
@@ -68,14 +64,50 @@ td{
     padding-top: 10px;
 }
 
+#principal-container{
+    display: flex;
+    flex-direction: row;
+}
+#cabecalho-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+}
+#menu{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.cabecalho a{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal; 
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.rodape a:hover {color:#041A6B;}
+
+.box-pig{
+    align-self: flex-end;
+    opacity: 0.5;
+    max-width:900px;
+    max-height:550px;
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px){
+    .box-pig { display: none; }
+}
+
+
 /*Menu*/
 .menu{
     text-align: right;
 }
 
-.topMenu{
-    padding-top: -5vh;
-}
 .menu ul{  
         
         padding:0px;
@@ -115,7 +147,7 @@ td{
     width: 10vh;
     height: 11vh;
     font-size: 6vh;
-    margin: 2vh;
+    margin: 0.4vh;
     text-align: center; 
     padding: 1vh;
     color: #FFFFFF;
@@ -125,7 +157,7 @@ td{
     display: inline-block;
     height: 1vh;    
     font-size:5vh;
-    margin: 1vh;
+    margin: 0.4vh;
     padding: 3vh;
     color: #041A6B;
     align-content: center;
@@ -140,22 +172,28 @@ td{
         margin-top: 3vh;
     }
 
-    #form-container{
+    #mc_embed_signup.flex-container{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
 
+    .clear{
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
     .button{
-        margin-top: 25px;
         background-color: #041A6B;
         border-style: none;
         border-radius: 55px;
-        width: 24vh;
-        height: 5vh;
+        width: 199px;
+        height: 65px;
         color: #FFFFFF;
         font-family: 'Poppins';
-        font-size: 2vh;;
+        font-size: 16px;
     }
 
     input[type=text], input[type=email] {
@@ -165,7 +203,12 @@ td{
         border-right:none;
         border-bottom: 2px solid #041A6B;
         font-family: 'Poppins';
+        width: 250px;
     } 
+    input[type=text]{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
 
     ::-webkit-input-placeholder{
         color: #041A6B;
@@ -219,21 +262,6 @@ td{
         line-height: 178%;
     }
 
-	.imagePig{
-		opacity: 0.5;
-		max-width:900px;
-		max-height:550px;
-		width: auto;
-        height: auto;
-	}
-
-	#tableImage
-	{
-		text-align: left;
-		padding: 15px;
-		color: #FFFFFF; 
-		font-color: #FFFFFF;
-	}
 
 /*Rodape*/
 
@@ -258,6 +286,14 @@ td{
         letter-spacing: -0.015em;                 
         color: #FFFFFF;   
     }
+    .rodape a{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: normal; 
+        color:#FFFFFF;
+        text-decoration: none;
+    }
+    .rodape a:hover {color:  #A3FFEE;}
 
 /*Inscricao*/
     .button-insc{
@@ -270,6 +306,8 @@ td{
         font-family: 'Poppins';
         font-size: 20px;
     }
+
+    /*Popup*/
 		
 	#dialogoverlay{
 	display: none;
