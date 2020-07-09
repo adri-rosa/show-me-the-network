@@ -5,15 +5,12 @@ body{
     margin: 0;
     padding:0;
 }
-td{
-    align-content: center;
-}
 .content h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;    
+    font-family: Poppins;
+    font-weight: bold;    
     text-align: left;          
     letter-spacing: -2px;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 100%;    
     color: #041A6B;    
 }
@@ -63,11 +60,6 @@ td{
     padding-right: 25px;
     padding-top: 10px;
 }
-
-#principal-container{
-    display: flex;
-    flex-direction: row;
-}
 #cabecalho-container{
     display: flex;
     flex-direction: row;
@@ -79,7 +71,6 @@ td{
     margin-left: auto;
     margin-right: 10px;
 }
-
 .cabecalho a{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -87,8 +78,25 @@ td{
     color:#FFFFFF;
     text-decoration: none;
 }
-.rodape a:hover {color:#041A6B;}
+.cabecalho a:hover {color:#041A6B;}
 
+
+#principal-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.box-left{
+    display: flex;
+    max-width: 600px;
+    margin-right: 50px;
+}
+.box-right{
+    display: flex;
+    
+}
+
+/*PIG
 .box-pig{
     align-self: flex-end;
     opacity: 0.5;
@@ -100,7 +108,7 @@ td{
 
 @media only screen and (max-width: 900px){
     .box-pig { display: none; }
-}
+}*/
 
 
 /*Menu*/
@@ -130,16 +138,18 @@ td{
 .menu ul li a:hover {color:  #041A6B;}
 
 /*Contagem Regressiva*/
-.contagem{
-    width:15vh;
-    height:12vh;
-    display:flex;
+
+    td{
     align-content: center;
-       
+    }
+
+    .contagem{
+    display: inline-block;
+    align-content: center;
+    margin-bottom: 20px;
     }
     
-    .numero
-    {
+    .numero{
     display: inline-block;
     border: 2px solid #041A6B;
     box-sizing: border-box;
@@ -164,13 +174,6 @@ td{
     }
 
 /*Form MailChimp*/
-
-    #form{
-        display: inline-block;
-        padding-bottom: 25px;
-        padding-top: 8vh;
-        margin-top: 3vh;
-    }
 
     #mc_embed_signup.flex-container{
         display: flex;
