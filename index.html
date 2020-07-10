@@ -41,65 +41,10 @@
       <!--Fonts-->
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
       <!--end fonts-->
+
       <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
       <link rel="stylesheet" href="src/styles.css"/>
-	   
-	  <!--Popup de exit-->
-	  <script>
-		function CustomAlert(){
-			this.render = function(dialog){
-				var winW = window.innerWidth;
-				var winH = window.innerHeight;
-				var dialogoverlay = document.getElementById('dialogoverlay');
-				var dialogbox = document.getElementById('dialogbox');
-				dialogoverlay.style.display = "block";
-				dialogoverlay.style.height = winH+"px";
-				dialogbox.style.left = (winW/2) - (550 * .5)+"px";
-				dialogbox.style.top = "100px";
-				dialogbox.style.display = "block";
-				document.getElementById('dialogboxhead').innerHTML = "<img src='images/gatodeBotas.gif' width='400' height='300'>";		
-				document.getElementById('dialogboxbody').innerHTML = dialog;
-				document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">OK</button>';
-			}
-			this.ok = function(){
-				document.getElementById('dialogbox').style.display = "none";
-				document.getElementById('dialogoverlay').style.display = "none";
-			}
-		}
-		
-	var Alert = new CustomAlert();
-	</script>
-	<div id="dialogoverlay"></div>
-	<div id="dialogbox">
-	  <div>
-		<div id="dialogboxhead"></div>
-		<div id="dialogboxbody"></div>
-		<div id="dialogboxfoot"></div>
-	  </div>
-	</div>
 
-	<script>
-		function addEvent(obj, evt, fn) {
-		if (obj.addEventListener) {
-			obj.addEventListener(evt, fn, false);
-		}
-		else if (obj.attachEvent) {
-			obj.attachEvent("on" + evt, fn);
-			}
-		}
-
-		addEvent(window,"load",function(e) {
-		addEvent(document, "mouseleave", function(e) {
-			e = e ? e : window.event;
-			var from = e.relatedTarget || e.toElement;
-			if (!from || from.nodeName == "HTML") {
-				// Aqui você coloca o seu popup
-				Alert.render('É sério que você já vai?"<br> Vai perder todo esse conteúdo GRATUITO mesmo?');
-			}
-		});
-	});
-	</script>	  
     <title>PéDeMeia</title>
   </head>
 
@@ -107,84 +52,93 @@
          <div class="principalBackground">
             <div class="principal">
                
-               <div class="logo" id="home">
-                  <img src="images/LOGO.webp" alt="Logo PéDeMeia"/>
-               </div>
+                  <div class="flex-container" id="cabecalho-container">
+                     <div class="logo">
+                        <img src="images/LOGO.webp" alt="Logo PéDeMeia"/>
+                     </div>
+         
+                        <div class="cabecalho" id="menu">
+                              <a href="#home">Home</a>
+                        </div>
+                        <div class="cabecalho">
+                              <a href="#empresa-container">Empresa</a>
+                        </div>
+                  </div>
 
-            <div class="topMenu">
-               <nav class="menu">
-                  <ul>
-                     <li><a href="#home">Home</a></li>
-                     <li><a href="#empresa-container">Empresa</a></li>
-                     <!--OCULTAR POR HORA
-                     <li><a href="#time-container">Time</a></li>
-                     <li>
-                        <div class="circulo_compartilhar"><a href="#"></a></div>
-                     </li>-->
-                  </ul>
-               </nav>
-            </div>
 
             <div class="content">
-               <h1><b>O valor da educação<br>financeira pós pandemia</b></h1>
-               <h2>O ano de 2020 não tá fácil pra ninguém, né? Chegamos para te ajudar! Com muito conteúdo para você começar seu PéDeMeia. 
-               E para irmos nessa juntos, teremos uma live com convidados especiais que farão um bate-papo descontraído e cheio de dicas que te ajudarão a dar o primeiro passo rumo à sua organização financeira! Bora?</h2>
+               <h1>O valor da educação<br>financeira pós pandemia</h1>
             </div>
 
-            
-                     <div class="contagem">
-                        <table>
-                           <tr>
-                              <td>
-                                 <p class="legenda">D</p>
-                              </td>
-                              <td>
-                                 <p class="legenda">H</p>
-                              </td>
-                              <td>
-                                 <p class="legenda">M</p>
-                              </td>
-                              <td>
-                                 <p class="legenda">S</p>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>
-                                 <div class="numero" id="dia"></div>
-                              </td>
-                              <td>
-                                 <div class="numero" id="hora"></div>
-                              </td>
-                              <td>
-                                 <div class="numero" id="minuto"></div>
-                              </td>
-                              <td>
-                                 <div class="numero" id="segundo"></div>
-                              </td>
-							  </tr>
-                        </table>
-						<!--<table id= "tableImage" border="1">
-						<!--<tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr>-->
-						<!--<tr>
-							   <td><img src='images/pig_big.png' class ="imagePig"> </td>
-							</tr>
-						</table>-->	
+            <div class="contagem">
+               <table>
+                  <tr>
+                     <td>
+                        <p class="legenda">D</p>
+                     </td>
+                     <td>
+                        <p class="legenda">H</p>
+                     </td>
+                     <td>
+                        <p class="legenda">M</p>
+                     </td>
+                     <td>
+                        <p class="legenda">S</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <div class="numero" id="dia"></div>
+                     </td>
+                     <td>
+                        <div class="numero" id="hora"></div>
+                     </td>
+                     <td>
+                        <div class="numero" id="minuto"></div>
+                     </td>
+                     <td>
+                        <div class="numero" id="segundo"></div>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+
+
+            <div class="flex-container" id="principal-container">
+
+                  <div class="content box-left col-md-6" id="box-left">
+                     <h2>O ano de 2020 não tá fácil pra ninguém, né? Chegamos para te ajudar! Com muito conteúdo para você começar seu PéDeMeia. 
+                     E para irmos nessa juntos, teremos uma live com convidados especiais que farão um bate-papo descontraído e cheio de dicas que te ajudarão a dar o primeiro passo rumo à sua organização financeira! Bora?</h2>
+                  </div>
+
+                  <div class="box-right col-md-3">
+
+                     <div class="live">
+                        <a href="https://www.youtube.com/channel/UCGbCnz4LqBQjDFvmxcpXi-Q" target="_blank" rel="noreferrer"><img src="images/live2.webp" width="385" height="270" alt="Canal PéDeMeia Youtube"></a>
                      </div>
-  
-               <div class="content" id="form">
-                  <h3>Quer fazer seu PéDeMeia?</h3>
-                  <h4> Inscreva-se e não fique de fora! </h4>
-               </div>
+                  </div>
+            </div>
+            
+            <div class="content">
+               <h3>Quer fazer seu PéDeMeia?</h3>
+               <h4> Inscreva-se e não fique de fora! </h4>
+            </div>
+ 
+            <!--PIG
+            <div class="box-pig">
+               <img src="images/pig1.webp" alt="Cofre de Porquinho">
+            </div>
+            End PIG-->
 
                 <!-- Begin Mailchimp Signup Form -->
                <div class="flex-container" id="form-container">
-                     <div id="mc_embed_signup">
+                     <div class="flex-container" id="mc_embed_signup">
                         <form action="https://pedemeia.us10.list-manage.com/subscribe/post?u=61175fa2c35f62dfffecc7410&amp;id=702bd6f9e7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                            <div id="mc_embed_signup_scroll">
                               <div class="mc-field-group">
-                                 <label for="mce-FNAME" class="label-form"></label>
+                                 <label for="mce-FNAME" class="label-form" style="display:none;">Nome</label>
                                  <input type="text" value="" name="FNAME" pattern="^\D{2,}\s[\D\s]{2,}$" class="required" id="mce-FNAME" placeholder="Nome">
-                                 <label for="mce-EMAIL"></label>
+                                 <label for="mce-EMAIL" style="display:none">E-mail</label>
                                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail">
                               </div>                           
                               <div id="mce-responses" class="clear">
@@ -198,7 +152,7 @@
                         </form>
                      </div>
                </div>
-                <!--End mc_embed_signup-->
+                <!--End Mailchimp Signup Form-->
 
                <div class="content">
                   <p>Enviaremos conteúdos exclusivos e mais informações sobre a live em primeira mão!</p>
@@ -206,8 +160,8 @@
             </div>
          </div>
 
-      <!--EMPRESA-->
 
+      <!--EMPRESA-->
       <div class="empresa">
          <h1>Empresa</h1>
       </div>
@@ -235,109 +189,38 @@
                </p>
             </div>
          </div>
- 
-      <!--TIME-->
-      <!--OCULTAR POR HORA
-         <div class="container" id="time-container">
-            <div class="row">
-               <h2>TIME</h2>
-            </div>
-            <div class="row justify-content-center">
-               <div class="empresa">
-                <div class="col-md-3" id="time">
-                    <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                    <p>
-                       Membro
-                    </p>
-                 </div>
-                  <div class="col-md-3" id="time">
-                     <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                     <p>
-                        Membro
-                     </p>
-                  </div>
-                  <div class="col-md-3" id="time">
-                    <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                    <p>
-                       Membro
-                    </p>
-                 </div>
-               </div>
-            </div>
-         
-            <div class="row justify-content-center">
-                <div class="empresa">
-                 <div class="col-md-3" id="time">
-                     <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                     <p>
-                        Membro
-                     </p>
-                  </div>
-                   <div class="col-md-3" id="time">
-                      <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                      <p>
-                         Membro
-                      </p>
-                   </div>
-                   <div class="col-md-3" id="time">
-                     <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                     <p>
-                        Membro
-                     </p>
-                  </div>
-                </div>
-             </div>
-         
-             <div class="row justify-content-center">
-                <div class="empresa">
-                 <div class="col-md-3" id="time">
-                     <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                     <p>
-                        Membro
-                     </p>
-                  </div>
-                   <div class="col-md-3" id="time">
-                      <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                      <p>
-                         Membro
-                      </p>
-                   </div>
-                   <div class="col-md-3" id="time">
-                     <img src="images/Ellipse.webp" class="rounded float-left" alt="Ícone de Valor">                     
-                     <p>
-                        Membro
-                     </p>
-                  </div>
-                </div>
-             </div>
-         </div>
-         -->
+         <!--End EMPRESA-->
 
+         <!--RODAPE-->
          <div class="flex-container" id="rodape-container">
             <div class="rodape">
                <img src="images/Logo_footer.webp" alt="Logo PéDeMeia"/>
             </div>
 
-            <div class="rodape">
-               <nav class="menu"> 
-                  <ul>
-                     <li><a href="#home">Home</a></li>
-                  </ul>
-               </nav>
-            </div>
-            <div class="rodape">
-               <nav class="menu"> 
-                  <ul>
-                     <li><a href="#empresa-container">Empresa</a></li>
-                  </ul>
-               </nav>
-            </div>
-            
+               <div class="rodape">
+                     <a href="#home">Home</a>
+               </div>
+               <div class="rodape">
+                     <a href="#empresa-container">Empresa</a>
+               </div>
+        
             <div class="rodape">
                <p> ©️PéDeMeia, Inc. 2020. ❤️ </p>
             </div>
          </div>
-
+         <!--End RODAPE-->
+         
+      <!--Popup de exit-->
+         <div id="dialogoverlay"></div>
+         <div id="dialogbox">
+            <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
+            </div>
+         </div>
+      <!--End Popup de exit-->
+      <script src="src/popUp.js"></script>
       <script src="src/scripts.js"></script>
    </body>
 </html>
