@@ -1,2 +1,3 @@
 # show-me-the-network
-Gama Experience Project
+
+Desenvolvimento de uma landing page com contagem regressiva e popup de saída como parte de um projeto do Gama Experience desenvolvido em grupo.
